@@ -16,7 +16,7 @@
     <main class="container vh-100 d-flex align-items-center justify-content-center">
       <div class="row">
         <figure class="d-flex justify-content-center mb-3">
-          <img src="{{ url_for('static',filename='img/combustivel.png') }}" alt="Logo">
+          <img src="{{ url_for('static',filename='img/bomba_de_combustivel.png') }}" alt="Logo">
         </figure>
         <div class="d-flex justify-content-center mb-5">
           <h1>COBRA FLEX</h1>
@@ -40,9 +40,11 @@
             </button>
           </div>
         </form>
-        <h2>
-          {{ msg if msg else '' }}
-        </h2>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <h2>
+            {{ msg if msg else '' }}
+          </h2>
+        </div>       
       </div>
     </main>
 
